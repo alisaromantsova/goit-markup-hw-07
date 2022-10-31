@@ -1,0 +1,41 @@
+.customer {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+&__title {
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+}
+
+&__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+&__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 92px;
+    width: 170px;
+    color: #AFB1B8;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    transition-property: color, border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+&__link:hover,
+&__link:focus {
+    color: $accentColor;
+    border: 1px solid $accentColor;
+}
+
+&__icon {
+    fill: currentColor;
+}
+}

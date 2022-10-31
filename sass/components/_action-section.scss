@@ -1,0 +1,37 @@
+.action {
+    padding-bottom: 94px;
+
+&__title {
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+}
+
+&__list {
+    display: flex;
+    gap: 30px;
+}
+}
+.action-card {
+    position: relative;
+
+
+&__text {
+    position: absolute;
+    bottom: 0;
+    height: 70px;
+    width: 100%;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    text-align: center;
+    color: $contrastColor;
+    background: rgba(47, 48, 58, 0.8);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+}
