@@ -4,11 +4,9 @@
     background-color: $sectionColor;
 
 &__title {
+    @include textStyles($color, 36px, 1.16, $letterSpacing);
     margin-bottom: 50px;
     text-align: center;
-    font-size: 36px;
-    line-height: 1.16;
-    letter-spacing: 0.03em;
 }
 
 &__list {
@@ -28,19 +26,14 @@
 }
 
 &__title {
+    @include textStyles($color, $size, 1.18, $letterSpacing);
     margin-bottom: 10px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.18;
-    letter-spacing: 0.03em;
+    font-weight: $mediumText;
 }
 
 &__text {
+    @include textStyles($paleColor, $size, 1.18, $letterSpacing);
     margin-bottom: 16px;
-    color: $paleColor;
-    font-size: 16px;
-    line-height: 1.18;
-    letter-spacing: 0.03em;
 }
 
 &__networks {

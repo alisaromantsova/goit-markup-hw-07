@@ -19,6 +19,7 @@
 
 
 &__text {
+    @include textStyles($contrastColor, 14px, 1.16, 0.03em);
     position: absolute;
     bottom: 0;
     height: 70px;
@@ -26,12 +27,8 @@
     padding-top: 27px;
     padding-bottom: 27px;
     text-align: center;
-    color: $contrastColor;
     background: rgba(47, 48, 58, 0.8);
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.16;
-    letter-spacing: 0.03em;
+    font-weight: $boldText;
     text-transform: uppercase;
 }
 }

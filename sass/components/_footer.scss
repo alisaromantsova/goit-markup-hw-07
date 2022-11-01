@@ -18,11 +18,9 @@
 }
 
 &__link {
+    @include textStyles ($contrastColor,$size,1.71,$letterSpacing);
     display: block;
-    color: $contrastColor;
     font-style: normal;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
     text-decoration: none;
 }
 
@@ -39,7 +37,6 @@
 .footer__contact:focus {
     color: $accentColor;
 }
-
 
 &-form {
     display: flex;
@@ -63,7 +60,10 @@
     margin-left: 12px;
     padding: 10px 28px;
 }
-
+&-form__button:hover,
+&-form__button:focus {
+    background-color: #188CE8;
+}
 &-form__icon {
     fill: currentColor;
     margin-left: 12px;
@@ -74,13 +74,10 @@
     margin-right: 93px;
 
 &__title {
+    @include textStyles($contrastColor,14px,$lineHeight,$letterSpacing);
     display: block;
     margin-bottom: 20px;
-    color: $contrastColor;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
+    font-weight: $boldText;
     text-transform: uppercase;
 }
 

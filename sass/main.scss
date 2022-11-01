@@ -1,6 +1,7 @@
 @import './utils/variables';
 @import './utils/bs';
-@import './utils/plaseholders';
+@import './utils/placeholders';
+@import './utils/mixins';
 @import './components/modal';
 @import './components/page-header';
 @import './components/contacts';
@@ -11,3 +12,4 @@
 @import './components/customer-section';
 @import './components/footer';
 @import './components/portfolio';
+@import './components/modal';

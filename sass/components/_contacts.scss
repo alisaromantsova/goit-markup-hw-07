@@ -7,16 +7,14 @@
       fill: currentColor;
         }
     &__link {
+        @include textStyles($paleColor,$size,$lineHeight,0.02em);
     display: block;
     display: flex;
     gap: 10px;
     align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
-    color: $paleColor;
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+    font-weight: $mediumText;
     text-decoration: none;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

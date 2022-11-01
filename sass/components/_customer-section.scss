@@ -3,11 +3,9 @@
     padding-bottom: 94px;
 
 &__title {
+    @include textStyles($color,36px,1.16,$letterSpacing);
     margin-bottom: 50px;
     text-align: center;
-    font-size: 36px;
-    line-height: 1.16;
-    letter-spacing: 0.03em;
 }
 
 &__list {

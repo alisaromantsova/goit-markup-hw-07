@@ -25,10 +25,6 @@
     transform: translate(-50%, -50%);
 }
 
-& {
-    display: flex;
-    flex-direction: column;
-}
 
 .modal__close-button {
     position: absolute;
@@ -48,8 +44,8 @@
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close-modal:hover,
-.close-modal:focus {
+.modal__close-button:hover,
+.modal__close-button:focus {
     color: $accentColor;
 }
 
@@ -57,21 +53,17 @@
     fill: currentColor;
 }
 .form{
+ display: flex;
+ flex-direction: column;
 &__title {
+    @include textStyles($color,20px,1.13,$letterSpacing);
     margin-bottom: 12px;
-    font-size: 20px;
-    line-height: 1.13;
     text-align: center;
-    letter-spacing: 0.03em;
-    color: $mainColor;
 }
 
 &__label {
+    @include textStyles($paleColor,12px,1.16,0.01em);
     margin-bottom: 10px;
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.01em;
-    color: $paleColor;
     cursor: pointer;
 }
 
@@ -123,23 +115,18 @@
 }
 
 .textarea__label {
+    @include textStyles($paleColor, 12px, 1.16, 0.01em);
     margin-bottom: 4px;
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.01em;
-    color: $paleColor;
     cursor: pointer;
 }
 
 .textarea {
+    @include textStyles($color, 12px, 1.16, 0.01em);
     margin-bottom: 20px;
     padding: 12px 16px;
     width: 100%;
     height: 120px;
     resize: none;
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.01em;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     outline: none;
@@ -152,13 +139,10 @@
 }
 
 .checkbox__label {
+    @include textStyles($paleColor, 14px, 1.71, $letterSpacing);
     position: relative;
     align-self: center;
     padding-left: 27px;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: $paleColor;
     cursor: pointer;
     margin-bottom: 30px;
 }
@@ -202,6 +186,10 @@
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+&__button:hover,
+&__button:focus {
+    background-color: #188CE8;
+}
 &__button:hover,
 &__button:focus {
     background-color: #188CE8;
