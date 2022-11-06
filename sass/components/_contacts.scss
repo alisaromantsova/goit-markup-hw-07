@@ -7,7 +7,7 @@
       fill: currentColor;
         }
     &__link {
-        @include textStyles($paleColor,$size,$lineHeight,0.02em);
+        @include textStyles($paleColor,16px,1.14,0.02em);
     display: block;
     display: flex;
     gap: 10px;

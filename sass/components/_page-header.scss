@@ -8,7 +8,7 @@ header {
     border-bottom: #ececec 1px solid;
 }
 .header__logo {
-    @extend .logo;
+    @extend %logo;
     padding-top: 24px;
     padding-bottom: 25px;
     margin-right: 93px;
@@ -29,7 +29,7 @@ header {
         }
 
 .nav-block__link {
-        @include textStyles($color, 14px, $lineHeight, 0.02em);
+        @include textStyles($mainColor, 14px, 1.14, 0.02em);
         position: relative;
         display: block;
         padding-top: 32px;

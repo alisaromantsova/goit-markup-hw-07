@@ -23,7 +23,7 @@
     }
 
     &__title {
-        @include textStyles($color,14px,1.14,0.03em);
+        @include textStyles($mainColor,14px,1.14,0.03em);
         margin-bottom: 10px;
         text-transform: uppercase;
     }

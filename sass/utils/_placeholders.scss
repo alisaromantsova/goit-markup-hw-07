@@ -1,15 +1,11 @@
-.logo {
+%logo {
     @include textStyles($darkColor, 26px, 1.19, 0.06em);
     display: block;
-    padding-top: 24px;
-    padding-bottom: 25px;
-    margin-right: 93px;
-    text-align: center;
     font-family: 'Raleway', sans-serif;
     font-weight: $boldText ;   
     text-decoration: none;
 }
-.button {
+%button {
     @include textStyles($contrastColor, 16px, 1.88, 0.06em);
     background-color: $accentColor;
     font-family: inherit;
@@ -21,7 +17,7 @@
     cursor: pointer;
 }
 
-.social {
+%social {
     display: block;
     display: flex;
     justify-content: center;

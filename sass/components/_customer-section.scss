@@ -3,7 +3,7 @@
     padding-bottom: 94px;
 
     &__title {
-        @include textStyles($color,36px,1.16,$letterSpacing);
+        @include textStyles($mainColor,36px,1.16,0.03em);
         margin-bottom: 50px;
         text-align: center;
     }

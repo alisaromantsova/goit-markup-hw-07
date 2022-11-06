@@ -9,7 +9,7 @@
     margin-bottom: 50px;
 
     &__button {
-        @include textStyles($color, $size, 1.62, $letterSpacing);
+        @include textStyles($mainColor, 16px, 1.62, 0.03em);
         padding: 6px 25px;
         text-align: center;
         background-color: $sectionColor;
@@ -61,7 +61,7 @@
     }
 
     &__description {
-        @include textStyles($contrastColor, 18px, 1.56, $letterSpacing);
+        @include textStyles($contrastColor, 18px, 1.56, 0.03em);
         height: 100%;
         width: 100%;
         position: absolute;
@@ -87,10 +87,10 @@
     }
 
     &__title {
-        @include textStyles($color, 18px, 2, 0.06em);
+        @include textStyles($mainColor, 18px, 2, 0.06em);
         margin-bottom: 4px;
     }
     &__text {
-        @include textStyles($paleColor, $size, 1.88, $letterSpacing);
+        @include textStyles($paleColor, 16px, 1.88, 0.03em);
     }
 }
